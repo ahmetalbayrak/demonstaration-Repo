@@ -1,0 +1,305 @@
+h1 {
+
+    text-align: center;
+    color: red;
+    text-shadow: 4px 4px 0px rgb(66, 10, 10);
+}
+
+.title {
+
+    color: rgb(255, 166, 0);
+}
+
+#italic{
+    color: green;
+}
+
+.container {
+
+    border: 10px dashed grey;
+
+    margin: 50px 5px 25px 0px;
+
+    padding: 10px 0px 25px 40px
+    ;
+}
+
+.box {
+
+    
+width: 200px;
+    height: 200px;
+    width: 200px;
+
+    background: blue;
+    margin: 10px;
+
+    
+
+}
+
+
+@keyframes fadeMe {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes rotation {
+
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes getBigger {
+
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(.75);
+    }
+    
+
+}
+
+
+
+@keyframes chanceColors {
+    0% {
+        background-color: grey;
+    }
+    25% {
+        background-color: purple;
+    }
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: pink;
+    }
+    100% {
+        background-color: grey;
+    }
+}
+
+@keyframes moveBox {
+
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+    
+}
+
+#box6 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+html {
+    background-image: radial-gradient;
+    }
+
+#box5 {
+    animation: moveBox 2s infinite;
+    background: red;
+    position: relative;
+}
+#box4 {
+    animation: chanceColors 7s infinite ease-in;
+}
+
+#box3 {
+    animation: getBigger 6s infinite ease-in forwards;
+    
+    border-radius: 50%;
+
+    background: orange;
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 20%;
+    background-image: radial-gradient(circle, purple, orange, pink, purple);
+
+}
+
+
+
+nav {
+
+    background-color: rgb(50, 158, 50);
+
+    text-align: center;
+
+
+}
+
+.nav-wrapper {
+    background-color: blue;
+}
+
+a {
+
+    text-decoration-line: none;
+
+
+}
+
+nav ul {
+
+    list-style: none;
+
+}
+
+nav li {
+
+    display: inline-block;
+    padding: 30px;
+}
+
+.circleImg {
+
+    border-radius: 25%;
+
+
+}
+
+img {
+
+    box-shadow: 5px 10px 20px 10px  rgb(150, 161, 172);
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 3px solid black;
+    justify-content: space-around;
+    padding: 100px;
+    flex-direction: row;
+
+
+}
+
+form input {
+    display: block;
+    margin: 30px;
+}
+
+form textarea {
+    display: block;
+    margin: 30px;
+}
+form button {
+    display: block;
+    margin: 30px;
+    
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+
+    margin: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 18% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: white;
+    color: #444;
+}
+
+.Box {
+    background-color: white;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col / span 5;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, yellow,purple,orange);
+}
+.d {
+    grid-column: col / span  3;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 4 / span  3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(orange, purple, yellow, pink);
+}
